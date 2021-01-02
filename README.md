@@ -3,7 +3,7 @@
 Set of lazily evaluated python functions.
 
 
-- The lazyness is achivied by curring functions.
+- The lazyness is achivied by curried functions.
 
 - Because this functions are being written as I think and read about some lambda calculus ideas, you will see
   - functions written almost entirely using python lambda functions
@@ -44,6 +44,6 @@ point(second)
 
 # the map_ function creates a new pair whose values is a transformation of the original pair:
 
-point2 = p(map_(lambda x: x + 2))
+point2 = point(map_(lambda x: x + 2))
 
 ```
