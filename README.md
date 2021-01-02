@@ -13,7 +13,7 @@ Set of lazily evaluated python functions.
 
 ### The data structure thing:
 
-- I've implemented a tuple by using functions.
+- I've implemented a pair by using functions.
 
 Example:
 
