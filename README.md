@@ -19,6 +19,7 @@ Example:
 
 ```python
 from lambda_py.lazy_pair import *
+import lambda_py.math as m
 
 # This is how you can create a pair
 
@@ -45,6 +46,12 @@ point(second) # -> 4
 # the map_ function creates a new pair whose values is a transformation of the original pair:
 
 point2 = point(map_(lambda x: x + 2)) # -> (5,6)
+
+point3 = point(map_(m.double)) # -> (6,8)
+
+times3 = m.times(3) # lazy times function
+
+point4 = point(map_(lambda x: times3(x))) # -> (9, 12)
 
 ```
 
