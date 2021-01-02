@@ -11,7 +11,7 @@ class TestPreludeFunctions(unittest.TestCase):
         self.assertTrue(prelude.identity(value) == value)
 
     
-    def test_if_the_apply_function_applies_correctly_the_a_given_function(self):
+    def test_if_the_apply_function_applies_correctly_a_given_function(self):
         f = m.double
         x = 3
         fx = f(x)
