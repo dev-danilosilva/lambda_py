@@ -13,7 +13,7 @@ Set of lazily evaluated python functions.
 
 ### The data structure thing:
 
-- I've implemented a pair by using functions.
+- I've implemented a immutable pair by using functions.
 
 Example:
 
@@ -47,3 +47,5 @@ point(second) # -> 4
 point2 = point(map_(lambda x: x + 2)) # -> (5,6)
 
 ```
+
+A tuple of 3 elements was implemented with the same api
