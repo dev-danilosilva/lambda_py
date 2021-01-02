@@ -36,14 +36,14 @@ point(show)
 
 # You can get the first element of this pair by passing a function called 'first' to the pair:
 
-point(first) # gets 3
+point(first) # -> 3
 
 # or get the second similarly
 
-point(second)
+point(second) # -> 4
 
 # the map_ function creates a new pair whose values is a transformation of the original pair:
 
-point2 = point(map_(lambda x: x + 2))
+point2 = point(map_(lambda x: x + 2)) # -> (5,6)
 
 ```
