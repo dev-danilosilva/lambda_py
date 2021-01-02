@@ -1,5 +1,3 @@
-from . import prelude
-
 '''
 
     λ expressions
