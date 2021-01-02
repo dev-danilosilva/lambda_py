@@ -1,3 +1,5 @@
+import math
+
 # Num a => a -> a -> a
 sum2 = lambda x0: lambda x1: x0 + x1
 
@@ -37,3 +39,16 @@ times = lambda x: lambda y: x * y
 # Float a => a -> a -> a
 div = lambda x: lambda y: x / y
 
+minus = lambda x: lambda y: sum2(x)(-y)
+
+cos = math.cos
+
+sin = math.sin
+
+tan = math.tan
+
+floor = math.floor
+
+ceil = math.ceil
+
+absolute = lambda x: x if x >= 0 else -x
