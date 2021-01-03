@@ -22,13 +22,13 @@ sum7 = lambda x0: lambda x1: lambda x2: lambda x3: lambda x4: lambda x5: lambda 
 sum8 = lambda x0: lambda x1: lambda x2: lambda x3: lambda x4: lambda x5: lambda x6: lambda x7: x0 + x1 + x2 + x3 + x4 + x5 + x6 + x7
 
 # Int -> Int -> Int
-fact = lambda n: 1 if n == 0 else n * fact(n - 1)
+factorial = lambda n: 1 if n == 0 else n * factorial(n - 1)
 
 # Int -> Int -> Int
 power = lambda x: lambda n: 1 if n == 0 else x * power(x)(n-1)
 
 # Int -> Int -> Int
-int_div = lambda numerator: lambda denominator: 0 if numerator <= 1 else 1 + int_div(numerator - denominator)(denominator)
+int_div = lambda numerator: lambda denominator: 1 + int_div(numerator - denominator)(denominator) if numerator >= denominator else 0
 
 # Num a => a -> a
 double = lambda x: x + x
