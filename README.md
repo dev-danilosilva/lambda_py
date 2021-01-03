@@ -13,7 +13,7 @@ Set of lazily evaluated python functions.
 
 ### The data structure thing:
 
-- I've implemented a immutable pair by using functions.
+- I've implemented an immutable pair by using functions.
 
 Example:
 
