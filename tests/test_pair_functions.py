@@ -31,5 +31,7 @@ class TestPairFunctions(unittest.TestCase):
         y2 = p1(p.second)
 
         self.assertTrue(x1 == x2 and y1 == y2)
-
-        
+    
+    def test_if_show_returns_a_string(self):
+        x = p.Pair(3)(4)
+        self.assertIsInstance(x(p.show), str)
