@@ -52,3 +52,5 @@ floor = math.floor
 ceil = math.ceil
 
 absolute = lambda x: x if x >= 0 else -x
+
+remainder = lambda x: lambda y: math.remainder(x, y)

@@ -7,13 +7,13 @@ class TestPairFunctions(unittest.TestCase):
     def test_if_pair_first_returns_the_first_element(self):
         x = 2
         y = 4
-        pair = p.pair(x)(y)
+        pair = p.Pair(x)(y)
         self.assertTrue(pair(p.first) == x)
     
     def test_if_pair_second_function_returns_the_second_element(self):
         x = 2
         y = 3
-        pair = p.pair(x)(y)
+        pair = p.Pair(x)(y)
         self.assertTrue( pair(p.second) == y )
     
     def test_if_map_function_transforms_the_pair_elements_correctly(self):
@@ -21,7 +21,7 @@ class TestPairFunctions(unittest.TestCase):
         
         x0 = 2
         y0 = 3
-        p0 = p.pair(x0)(y0)
+        p0 = p.Pair(x0)(y0)
 
         x1 = func(x0)
         y1 = func(y0)
