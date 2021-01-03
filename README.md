@@ -57,8 +57,6 @@ pair4 = pair(map_(lambda x: times3(x))) # -> (9, 12)
 pair5 = pair (map_(lambda x: x + 2)) \
              (map_(lambda x: x * 2)) \
              (map_(times3))
-
-
 ```
 
 A tuple of 3 elements was implemented with the same api

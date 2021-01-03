@@ -99,3 +99,17 @@ class TestMathFunctions(unittest.TestCase):
 
     def test_if_the_interger_division_of_100_by_40_is_20(self):
         self.assertEqual(m.int_div(100)(40), 2)
+
+    def test_if_the_absolute_value_of_a_positive_number_is_equal_to_itself(self):
+        x = 30
+        self.assertEqual(m.absolute(x), x)
+    
+    def test_if_the_absolute_value_of_a_negative_number_is_equal_to_the_oposite_of_this_number(self):
+        x = -30
+        self.assertEqual(m.absolute(x), -x)
+    
+    def test_if_the_mod_of_10_by_5_is_0(self):
+        self.assertTrue(m.mod(10)(5) == 0)
+    
+    def test_if_the_mod_of_100_by_40_is_20(self):
+        self.assertTrue(m.mod(100)(40) == 20)

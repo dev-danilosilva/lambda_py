@@ -53,4 +53,4 @@ ceil = math.ceil
 
 absolute = lambda x: x if x >= 0 else -x
 
-modulo = lambda x: lambda y: modulo(x - y)(y) if x >= y else x
+mod = lambda x: lambda y: mod(x - y)(y) if x >= y else x
