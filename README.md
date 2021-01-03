@@ -56,7 +56,7 @@ pair4 = pair(map_(lambda x: times3(x))) # -> (9, 12)
 # chain of tranformations.
 pair5 = pair (map_(lambda x: x + 2)) \
              (map_(lambda x: x * 2)) \
-             (map_(times3)) # -> (30, 36)
+             (map_(times3))
 
 
 ```
