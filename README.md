@@ -23,11 +23,11 @@ import lambda_py.math as m
 
 # This is how you can create a pair
 
-point = pair(3)(4)
+point = Pair(3)(4)
 
 # showing the evaluation lazyness building a pair in distinct moments 
 
-partially_applied_pair_of_numbers = pair(3)
+partially_applied_pair_of_numbers = Pair(3)
 point = partially_applied_pair_of_numbers(4) # 'point' is a pair (3, 4)
 
 
